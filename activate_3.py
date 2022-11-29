@@ -17,12 +17,17 @@ ax.barh(data['Segment'], data['Sales'])
 ax.set_title('Ventas por segmento')
 st.pyplot(fig1)
 
-# Gráfico de pastel
-fig2 = px.pie(data,'Category', title = 'Proporción de ordenes por categoría')
-st.write(fig2)
+# Gráfico de scatter
+fig2, ax2 = plt.subplots()
+ax2.scatter(data.Discount , data.Sales)
+ax2.set_xlabel("Discount")
+ax2.set_ylabel("Sales")
+st.header("Grafica de Dispersión de cantidad de ventas por nivel de descuento")
+st.pyplot(fig2)
 
-# Histograma
-fig3 = px.histogram(data,'Discount', title = 'Distribución de los descuentos por porcentaje (Representado decimalmente)')
-st.write(fig3)
+fig3, ax3 = plt.subplots()
+ax3.hist(data.Discount)
+st.header("Distribución de los descuentos por porcentaje (Representado decimalmente)")
+st.pyplot(fig3)
 
 # streamlit run activate_3.py
