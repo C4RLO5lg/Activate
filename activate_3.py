@@ -1,7 +1,7 @@
 # Carlos Ledezma García A00828114
 
 import pandas as pd
-import streamlit as stgit 
+import streamlit as st
 import matplotlib.pyplot as plt
 
 data = pd.read_csv('https://raw.githubusercontent.com/jeaggo/tc3068/master/Superstore.csv')
