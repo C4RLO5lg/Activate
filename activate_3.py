@@ -1,8 +1,7 @@
 # Carlos Ledezma García A00828114
 
 import pandas as pd
-import streamlit as st
-import plotly.express as px
+import streamlit as stgit 
 import matplotlib.pyplot as plt
 
 data = pd.read_csv('https://raw.githubusercontent.com/jeaggo/tc3068/master/Superstore.csv')
